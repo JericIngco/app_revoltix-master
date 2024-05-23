@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreDashboard">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bluebg" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                    <TextView
+                        android:id="@+id/revText"
+                        android:layout_width="match_parent"
+                        android:layout_height="71dp"
+                        android:fontFamily="@font/futura_display"
+                        android:letterSpacing="0.1"
+                        android:text="@string/revoltix"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="50sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.146"
+                tools:layout_editor_absoluteX="0dp">
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal">-->
+
+
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/TextViewScore"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:fontFamily="@font/futura_display"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="@string/your_score"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textAlignment="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="@color/yellow"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="40sp" />&ndash;&gt;-->
+
+
+<!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/glassmorphism"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/scoreFinish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/futura_display"
+                        android:padding="20dp"
+                        android:text="@string/load"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="40sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <!--                    <TextView-->
+                        <!--                        android:id="@+id/summary"-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:fontFamily="@font/futura_display"-->
+                        <!--                        android:padding="0dp"-->
+                        <!--                        android:text="Time Duration : "-->
+                        <!--                        android:textColor="@color/white"-->
+                        <!--                        android:textSize="30sp" />-->
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/futura_display"
+                            android:padding="0dp"
+                            android:text="@string/time_duration"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/futura_display"
+                            android:padding="0dp"
+                            android:text="@string/time_duration"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/goHomeScore"
+                        android:layout_width="122dp"
+                        android:layout_height="41dp"
+                        android:contentDescription="@string/go_home"
+                        app:srcCompat="@drawable/left" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
